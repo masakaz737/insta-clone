@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <title>InstagramClone</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://morning-falls-96011.herokuapp.com/" />
+    <meta property="og:image" content="https://morning-falls-96011.herokuapp.com/top_image.jpg" />
+    <meta property="og:site_name" content="InstagramClone" />
+    <meta property="og:description" content="Railsで作成したアプリケーションです。ログイン機能、画像アップロード機能、投稿完了メール通知機能があります。投稿画像はAWS S3に格納されます。" />
+    <meta name="twitter:card" content="summarylargeimage" />
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>

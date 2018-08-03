@@ -44,7 +44,7 @@ class PostsController < ApplicationController
     respond_to do |format|
       if @post.save
         PostMailer.post_mail(@post, @user).deliver
-        format.html { redirect_to @post, notice: '投稿が完了しました！' }
+        format.html { redirect_to post_path(@post.id), notice: '投稿が完了しました！' }
         format.json { render :show, status: :created, location: @post }
       else
         format.html { render :new }

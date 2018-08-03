@@ -2,7 +2,7 @@
 <%= form_with(model: @post, url: posts_path, local: true) do |form| %>
   <!-- 確認画面でアップロードした画像を表示させるための記述 -->
   <div class="field">
-    <%= image_tag(@post.image) %>
+    <%= image_tag @post.image %>
     <%= form.hidden_field :image_cache %>
   </div>
   <div class="field">
